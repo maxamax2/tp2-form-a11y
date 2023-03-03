@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/* Importation des polices au tout début! */
+
+/**
+ * @author Maxime Lebrun - TP2 Form
+ *
+ * TABLE DES MATIERES
+ * Normalize
+ * Utilitaires
+ * Charte typographique 
+ * Boutons
+ */
+
+/* Normalize
+   ========================================================================== */
+@import url(normalize.css);
+
+/* Utilitaires
+   ========================================================================== */
+@import url(utilitaires.css);
+
+/* Charte typographique
+   ========================================================================== */
+@import url(typo.css);
+
+/* Grille
+   ========================================================================== */
+   @import url(grille.css);
+
+
+img {
+    width: 200px;
+    height: 200px;
+   display: block;
+}
+
+input[type=radio]+label{
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+[type=radio]:hover+label,
+[type=radio]:focus+label {
+    border: 2px solid #09c231;
+}
+
+li{
+    list-style-type: none;
+}
