@@ -28,78 +28,85 @@
                 <legend>
                     <h2>1. Vérifier la disponibilité</h2>
                 </legend>
-            <div class="form-section">
-                
-                <label for="date-arrivee">Date d'arrivée :</label>
-                <input type="date" id="date-arrivee" name="date-arrivee">
+                <div class="form-section">
 
-                <label for="date-depart">Date de départ :</label>
-                <input type="date" id="date-depart" name="date-depart">
+                    <label for="date-arrivee">Date d'arrivée :</label>
+                    <input type="date" id="date-arrivee" name="date-arrivee" required>
 
-                <button type="button" id="check-availability-button">Vérifier la disponibilité</button>
-                <p id="availability-message"></p>
-            </div>
+                    <label for="date-depart">Date de départ :</label>
+                    <input type="date" id="date-depart" name="date-depart" required>
+
+                    <button type="button" id="check-availability-button">Vérifier la disponibilité</button>
+                    <p id="availability-message"></p>
+                </div>
 
             </fieldset>
             <fieldset class="encadre">
                 <legend>
                     <h2>2. Nombre de personnes </h2>
                 </legend>
-            <div class="form-section">
-                
-                <label>Adultes (maximum 4):</label>
-                <input id="adultes" name="adultes">
+                <div class="form-section">
 
-                <label>Enfants (maximum 5):</label>
-                <input id="enfants" name="enfants">
+                    <label for="adultes">Adultes (maximum 4):</label>
+                    <input id="adultes" name="adultes" max="4" required>
 
-                <p>
-                    Notes: <br>
-                    1. la chambre familiale peut loger jusqu'à 6 personnes<br>
-                    2. si vous avez besoin de louer plusieurs chambres, <a href="">contactez-nous directement</a>
-                </p>
-            </div>
+                    <label for="enfants">Enfants (maximum 5):</label>
+                    <input id="enfants" name="enfants" max="5" required>
+
+                    <p>
+                        Notes: <br>
+                        1. la chambre familiale peut loger jusqu'à 6 personnes<br>
+                        2. si vous avez besoin de louer plusieurs chambres, <a href="">contactez-nous directement</a>
+                    </p>
+                </div>
             </fieldset>
+
+
             <fieldset class="encadre">
                 <legend>
                     <h2>3. Choix chambre et forfait </h2>
                 </legend>
-            <div class="form-section">
-                
 
-                <!-- Trois boutons radio pour le choix du type de chambre simple, double ou familiale 
+                <div class="form-section">
+                    <!-- Trois boutons radio pour le choix du type de chambre simple, double ou familiale 
                 Les boutons doivent être des images cliquables: utiliser images/types-de-chambre -->
 
-                <!-- [case à cocher] Inclure le petit déjeuner s'il-vous-plaît -->
+                    <!-- [case à cocher] Inclure le petit déjeuner s'il-vous-plaît -->
+                    <label for="chambre-simple"><img src="/images/types-de-chambre/1-lit-double.webp" alt="Chambre simple"></label>
+                    <input type="radio" id="chambre-simple" name="choix-chambre" required>
+                    
+                    <label for="chambre-double"><img src="/images/types-de-chambre/2-lits-double.jpg" alt="Chambre double"></label>
+                    <input type="radio" id="chambre-double" name="choix-chambre">
 
-                <p> Le coût du petit déjeûner des adultes est de 25$ CAN, pour les enfants de moins de 12 ans c'est
-                    12.50$
-                    CAN.</p>
+                    <label for="chambre-familiale"><img src="/images/types-de-chambre/chambre-familiale.jpg" alt="Chambre familiale"></label>
+                    <input type="radio" id="chambre-familiale" name="choix-chambre">
+                    <p> Le coût du petit déjeûner des adultes est de 25$ CAN, pour les enfants de moins de 12 ans c'est
+                        12.50$
+                        CAN.</p>
 
-            </div>
+                </div>
             </fieldset>
 
             <fieldset class="encadre">
                 <legend>
                     <h2>4. Identification</h2>
                 </legend>
-            <div class="form-section">
-                
-                <label>Prénom :</label>
-                <input id="prenom" name="prenom">
+                <div class="form-section">
 
-                <label>Nom :</label>
-                <input id="nom" name="nom">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required>
 
-                <label>Email :</label>
-                <input id="email" name="email">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
 
-                <label>Téléphone :</label>
-                <input id="telephone" name="telephone">
+                    <label for="email">Email :</label>
+                    <input id="email" name="email" required>
 
-            </div>
+                    <label for="telephone">Téléphone :</label>
+                    <input type="text" id="telephone" name="telephone" required>
+                </div>
             </fieldset>
-            
+
 
             <p><button type="submit">Confirmer la réservation</button></p>
         </form>
