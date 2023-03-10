@@ -39,6 +39,7 @@ footer {
 footer {
     background-color: var(--couleur-form);
     margin: 2rem -2rem -2rem;
+    text-align: center;
     /* -2rem pour compenser le padding du main */
 }
 
@@ -68,7 +69,8 @@ fieldset fieldset {
 }
 
 fieldset {
-    border: 1px solid #ccc;
+    border: 3px solid rgb(114, 145, 191);
+    border-radius: 20px;
 }
 
 legend {
@@ -224,6 +226,7 @@ input[type="number"] {
 .forfait__li [type="radio"]:checked+label img,
 .forfait__li [type="radio"]:hover+label img {
     filter: none;
+    cursor: pointer;
 }
 
 .case-a-cocher [type="checkbox"] {

@@ -6,7 +6,7 @@
     --bouton-box-shadow: 5px 5px 5px;
 
     --couleur-titres-h1-h3: var(--nav-background-color);
-    --couleur-form: #cccccc8f;
+    --couleur-form: rgb(114, 145, 191);
     --couleur-bouton: lightskyblue;
     /* --couleur-bouton-hover: azure; */
     --couleur-bouton-hover: var(--couleur-bleu-jacana);
@@ -16,11 +16,11 @@
     --police-titre: 'News Cycle', sans-serif;
     --police-texte: 'Roboto Slab', serif;
 
-    --nav-background-color: darkmagenta;
+    --nav-background-color: rgb(114, 145, 191);
     --nav-color: white;
     --nav-hover-color: #fff;
     --nav-hover-background-color: var(--couleur-bleu-jacana);
-    --nav-border-color: rgba(101, 68, 180, 1);
+    --nav-border-color: rgb(0, 217, 255);
 }
 
 /*** Clearfix ***/
